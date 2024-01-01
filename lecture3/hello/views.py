@@ -13,4 +13,6 @@ def aria(request):
   return HttpResponse("Hello aria")
 
 def greet(request,name):
-  return HttpResponse(f"Hello, {name.capitalize()}")
+  return(request, "hello/greet.html",{
+    "name":name.capitalize()
+  }) 

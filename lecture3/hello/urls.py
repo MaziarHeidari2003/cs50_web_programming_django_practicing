@@ -5,5 +5,5 @@ urlpatterns = [
   path("",views.index, name="index") ,
   path('<str:name>', views.greet, name="greet"),
   path('maziar',views.maziar,name="maziar"),
-  path('aria',views.aria, name='aria')
+  path('aria',views.aria, name='aria'),
 ]
